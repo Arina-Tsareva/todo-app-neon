@@ -1,9 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-// URL вашего json-server
 const API_URL = "http://localhost:5000/todos";
 
-// Получение списка задач
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "GET") {
     try {
